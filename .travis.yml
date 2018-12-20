@@ -2,6 +2,9 @@ language: node_js
 
 node_js:
   - "6"
+  
+script:
+  - "npm install"
 
 after_success:
 - bash <(curl -s https://scripts.scantist.com/staging/ci-travis-jar.sh)
